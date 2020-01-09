@@ -1,0 +1,2 @@
+cx-Oracle==7.3.0
+pyodbc==4.0.28

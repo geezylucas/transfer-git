@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/transfer/connections/conmssqlserver/extract_data.py" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/transfer/connections/conmssqlserver/insert_data.py" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/transfer/connections/conoracle/extract_data.py" dialect="Oracle" />
+  </component>
+</project>
