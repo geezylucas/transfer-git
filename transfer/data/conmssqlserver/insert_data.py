@@ -1,4 +1,4 @@
-from transfer.connections.conmssqlserver.connection import ConnMSSQLServer
+from transfer.data.conmssqlserver.connection import ConnMSSQLServer
 
 
 class InsertData(ConnMSSQLServer):

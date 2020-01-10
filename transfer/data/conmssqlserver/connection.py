@@ -1,4 +1,5 @@
 import pyodbc
+import time
 
 
 class ConnMSSQLServer(object):
@@ -29,9 +30,15 @@ class ConnMSSQLServer(object):
     def insert_many(self, query, params):
         cursor = self.__conn.cursor()
         try:
+
+            start = time.time()
+
             cursor.fast_executemany = True
             cursor.executemany(query, params)
             cursor.commit()
+
+            end = time.time()
+            print(end - start)
         except pyodbc.Error as err:
             print(err)
 

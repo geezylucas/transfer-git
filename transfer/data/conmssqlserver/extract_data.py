@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from transfer.connections.conmssqlserver.connection import ConnMSSQLServer
+from transfer.data.conmssqlserver.connection import ConnMSSQLServer
 
 
 class ExtractData(ConnMSSQLServer):

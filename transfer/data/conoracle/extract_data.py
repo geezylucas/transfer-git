@@ -1,4 +1,4 @@
-from transfer.connections.conoracle.connection import ConnOracle
+from transfer.data.conoracle.connection import ConnOracle
 
 
 class ExtractData(ConnOracle):
