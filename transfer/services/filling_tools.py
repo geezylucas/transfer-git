@@ -4,7 +4,7 @@ import transfer.data.conoracle.extract_data as oracle_extract_data
 
 import transfer.data.conmssqlserver.insert_data as mssql_insert_data
 
-# 'localhost', 'DataPROSIS', 'sa', 'Lucerde1@'
+# '192.168.0.112', 'DataPROSIS', 'sa', 'Lucerde1@'
 
 # '192.168.0.129', '1521', service_name='GEAPROD'
 # user=r'GEADBA', password='fgeuorjvne', dsn=dsn_tns
@@ -53,4 +53,4 @@ def fist_filling():
     # insert transactions
     mssql_insert.insert_transactions(transactions)
 
-    print('OK')
+    # insert fin_poste - reddition

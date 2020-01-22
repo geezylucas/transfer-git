@@ -42,15 +42,15 @@ class ConnMSSQLServer(object):
         except pyodbc.Error as err:
             print(err)
 
-    def insert_many_for(self, query, params):
-        cursor = self.__conn.cursor()
-        try:
-            for p in params:
-                cursor.execute(query, p)
-
-            cursor.commit()
-        except pyodbc.Error as err:
-            print(err)
-
     def __del__(self):
         self.__conn.close()
+
+    # def insert_many_for(self, query, params):
+    #     cursor = self.__conn.cursor()
+    #     try:
+    #         for p in params:
+    #             cursor.execute(query, p)
+
+    #         cursor.commit()
+    #     except pyodbc.Error as err:
+    #         print(err)
